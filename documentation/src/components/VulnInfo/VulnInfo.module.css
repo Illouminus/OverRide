@@ -1,0 +1,235 @@
+.vulnCard {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  backdrop-filter: blur(15px);
+  position: relative;
+  overflow: hidden;
+}
+
+.vulnCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(45deg, #ff0040, #00ff41, #00ffff, #ff0040);
+  background-size: 400% 400%;
+  animation: borderGlow 3s ease infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+@keyframes borderGlow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.vulnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.vulnType {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vulnIcon {
+  font-size: 1.5rem;
+}
+
+.vulnTitle {
+  color: #00ff41;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.severityBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.severityLow {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}
+
+.severityMedium {
+  background: rgba(251, 191, 36, 0.2);
+  border: 1px solid #fbbf24;
+  color: #fbbf24;
+}
+
+.severityHigh {
+  background: rgba(249, 115, 22, 0.2);
+  border: 1px solid #f97316;
+  color: #f97316;
+}
+
+.severityCritical {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  animation: criticalPulse 2s infinite;
+}
+
+@keyframes criticalPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+}
+
+.severityIcon {
+  font-size: 1rem;
+}
+
+.severityText {
+  font-weight: 900;
+}
+
+.vulnContent {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sectionTitle {
+  color: #00ffff;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.descriptionText {
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.impact {
+  background: rgba(255, 0, 64, 0.05);
+  border: 1px solid rgba(255, 0, 64, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.impactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.impactItem {
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.bullet {
+  color: #ff0040;
+  font-weight: bold;
+  margin-top: 0.1rem;
+}
+
+.techniques {
+  background: rgba(0, 255, 65, 0.05);
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.techniquesTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.techniqueTag {
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.techniqueTag:hover {
+  background: rgba(0, 255, 65, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 65, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .vulnCard {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .vulnHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .vulnTitle {
+    font-size: 1.3rem;
+  }
+  
+  .severityBadge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+  }
+  
+  .description, .impact, .techniques {
+    padding: 1rem;
+  }
+  
+  .techniqueTag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

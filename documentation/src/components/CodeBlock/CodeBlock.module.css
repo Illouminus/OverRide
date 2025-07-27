@@ -1,0 +1,87 @@
+.codeContainer {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  margin: 1rem 0;
+  overflow: hidden;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.codeHeader {
+  background: #1e293b;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.codeTitle {
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.copyButton {
+  background: #475569;
+  border: none;
+  color: #e2e8f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copyButton:hover {
+  background: #64748b;
+}
+
+.codeContent {
+  padding: 1rem;
+}
+
+.commandSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.prompt {
+  color: #8b5cf6;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.command {
+  color: #f1f5f9;
+  font-size: 0.875rem;
+}
+
+.output {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .codeContainer {
+    margin: 1rem -1rem;
+    border-radius: 0;
+  }
+  
+  .codeHeader {
+    padding: 0.5rem 1rem;
+  }
+  
+  .codeContent {
+    padding: 0.75rem;
+  }
+  
+  .command, .output {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,307 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.terminalWindow {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  border: 1px solid #00ff41;
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.terminalHeader {
+  background: #1a1a1a;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.terminalButtons {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.terminalButton {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+}
+
+.terminalButton:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.terminalButton:nth-child(3) {
+  background: #27ca3f;
+}
+
+.terminalTitle {
+  color: #00ff41;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.terminalBody {
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+  text-align: left;
+}
+
+.terminalLine {
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #00ff41;
+  font-weight: bold;
+}
+
+.command {
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.terminalOutput {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #00ff41;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+  text-shadow: 
+    0 0 10px #00ff41,
+    0 0 20px #00ff41,
+    0 0 30px #00ff41;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  animation: glitch-anim-1 0.5s infinite linear alternate-reverse;
+  color: #ff0040;
+  z-index: -1;
+}
+
+.glitch::after {
+  animation: glitch-anim-2 0.5s infinite linear alternate-reverse;
+  color: #00ffff;
+  z-index: -2;
+}
+
+@keyframes glitch-anim-1 {
+  0% { clip: rect(42px, 9999px, 44px, 0); }
+  5% { clip: rect(12px, 9999px, 59px, 0); }
+  10% { clip: rect(48px, 9999px, 29px, 0); }
+  15% { clip: rect(42px, 9999px, 73px, 0); }
+  20% { clip: rect(63px, 9999px, 27px, 0); }
+  25% { clip: rect(34px, 9999px, 55px, 0); }
+  30% { clip: rect(86px, 9999px, 73px, 0); }
+  35% { clip: rect(20px, 9999px, 20px, 0); }
+  40% { clip: rect(26px, 9999px, 60px, 0); }
+  45% { clip: rect(25px, 9999px, 66px, 0); }
+  50% { clip: rect(57px, 9999px, 98px, 0); }
+  55% { clip: rect(5px, 9999px, 46px, 0); }
+  60% { clip: rect(82px, 9999px, 31px, 0); }
+  65% { clip: rect(54px, 9999px, 27px, 0); }
+  70% { clip: rect(28px, 9999px, 99px, 0); }
+  75% { clip: rect(45px, 9999px, 69px, 0); }
+  80% { clip: rect(23px, 9999px, 85px, 0); }
+  85% { clip: rect(54px, 9999px, 84px, 0); }
+  90% { clip: rect(45px, 9999px, 47px, 0); }
+  95% { clip: rect(37px, 9999px, 20px, 0); }
+  100% { clip: rect(4px, 9999px, 91px, 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip: rect(65px, 9999px, 100px, 0); }
+  5% { clip: rect(52px, 9999px, 74px, 0); }
+  10% { clip: rect(79px, 9999px, 85px, 0); }
+  15% { clip: rect(75px, 9999px, 5px, 0); }
+  20% { clip: rect(67px, 9999px, 61px, 0); }
+  25% { clip: rect(14px, 9999px, 79px, 0); }
+  30% { clip: rect(1px, 9999px, 66px, 0); }
+  35% { clip: rect(86px, 9999px, 30px, 0); }
+  40% { clip: rect(23px, 9999px, 98px, 0); }
+  45% { clip: rect(85px, 9999px, 72px, 0); }
+  50% { clip: rect(71px, 9999px, 75px, 0); }
+  55% { clip: rect(2px, 9999px, 48px, 0); }
+  60% { clip: rect(30px, 9999px, 16px, 0); }
+  65% { clip: rect(59px, 9999px, 50px, 0); }
+  70% { clip: rect(41px, 9999px, 62px, 0); }
+  75% { clip: rect(68px, 9999px, 95px, 0); }
+  80% { clip: rect(38px, 9999px, 81px, 0); }
+  85% { clip: rect(98px, 9999px, 61px, 0); }
+  90% { clip: rect(90px, 9999px, 96px, 0); }
+  95% { clip: rect(55px, 9999px, 46px, 0); }
+  100% { clip: rect(16px, 9999px, 95px, 0); }
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  font-family: 'Courier New', monospace;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+  transform: translateY(-2px);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hackButton {
+  background: linear-gradient(45deg, #ff0040, #ff4081);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 0, 64, 0.3);
+}
+
+.hackButton:hover {
+  background: linear-gradient(45deg, #ff4081, #ff0040);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 0, 64, 0.5);
+  color: white;
+}
+
+.learnButton {
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.learnButton:hover {
+  background: #00ff41;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 65, 0.3);
+}
+
+.matrixRain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-size='13' fill='%2300ff41' opacity='0.1'%3E01101001%3C/text%3E%3C/svg%3E") repeat;
+  animation: matrix-rain 20s linear infinite;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+@keyframes matrix-rain {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+    min-height: 70vh;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .terminalWindow {
+    margin: 0 1rem 2rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .skillTags {
+    gap: 8px;
+  }
+  
+  .tag {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+  }
+}

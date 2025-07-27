@@ -1,0 +1,120 @@
+.stepsContainer {
+  margin: 2rem 0;
+}
+
+.step {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stepNumber {
+  background: #6366f1;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.stepTitle {
+  color: #f1f5f9;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stepDescription {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stepDescription:last-child {
+  margin-bottom: 0;
+}
+
+.codeBlock {
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.commandLine {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.prompt {
+  color: #8b5cf6;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.command {
+  color: #f1f5f9;
+  font-size: 0.875rem;
+}
+
+.output {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-top: 1px solid #475569;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .step {
+    padding: 1rem;
+  }
+  
+  .stepHeader {
+    gap: 0.75rem;
+  }
+  
+  .stepNumber {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .stepTitle {
+    font-size: 1rem;
+  }
+  
+  .codeBlock {
+    padding: 0.75rem;
+  }
+  
+  .command, .output {
+    font-size: 0.8rem;
+  }
+}

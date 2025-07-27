@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  override-docs-dev:
+    build:
+      context: ./documentation
+      dockerfile: Dockerfile.dev
+    container_name: override-documentation-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./documentation:/app
+      - /app/node_modules
+    restart: unless-stopped
+    networks:
+      - override-dev-net
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    labels:
+      - "com.override.description=OverRide Documentation Development"
+      - "com.override.service=docs-dev"
+
+networks:
+  override-dev-net:
+    driver: bridge
+    name: override-dev-network

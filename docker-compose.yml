@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  override-docs:
+    build:
+      context: ./documentation
+      dockerfile: Dockerfile
+    container_name: override-documentation
+    ports:
+      - "${DOCS_PORT:-3000}:80"
+    restart: ${RESTART_POLICY:-unless-stopped}
+    networks:
+      - override-net
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+    labels:
+      - "com.override.description=OverRide Documentation"
+      - "com.override.service=docs"
+      - "com.override.version=1.0.0"
+
+networks:
+  override-net:
+    driver: bridge
+    name: ${COMPOSE_PROJECT_NAME:-override}-network

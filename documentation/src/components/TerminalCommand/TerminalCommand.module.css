@@ -1,0 +1,111 @@
+.terminalWindow {
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 8px;
+  border: 1px solid #00ff41;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+  margin: 1rem 0;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+}
+
+.terminalHeader {
+  background: #1a1a1a;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+.terminalButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminalButton {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+}
+
+.terminalButton:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.terminalButton:nth-child(3) {
+  background: #27ca3f;
+}
+
+.terminalTitle {
+  color: #00ff41;
+  font-size: 14px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.copyButton {
+  background: transparent;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.copyButton:hover {
+  background: #00ff41;
+  color: #000;
+}
+
+.terminalBody {
+  padding: 16px;
+  background: #000;
+  color: #00ff41;
+}
+
+.commandLine {
+  margin-bottom: 8px;
+}
+
+.prompt {
+  color: #00ff41;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.command {
+  color: #ffffff;
+}
+
+.output {
+  color: #cccccc;
+  margin-top: 8px;
+  border-left: 2px solid #333;
+  padding-left: 12px;
+}
+
+.outputLine {
+  margin: 2px 0;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .terminalWindow {
+    margin: 1rem -1rem;
+    border-radius: 0;
+  }
+  
+  .terminalHeader {
+    padding: 10px 12px;
+  }
+  
+  .terminalBody {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
