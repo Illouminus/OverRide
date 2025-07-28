@@ -97,8 +97,8 @@ Dump of assembler code for function main:
 ## Live Demonstration
 
 <AsciinemaPlayer 
-  src="https://asciinema.org/a/wM9Vo07lS9fiblYICSvSNpxrQ.js" 
-  id="asciicast-wM9Vo07lS9fiblYICSvSNpxrQ" 
+  src="https://asciinema.org/a/bXLfMcqqNwKsw1SUErGhrgU3z.js" 
+  id="asciicast-bXLfMcqqNwKsw1SUErGhrgU3z" 
 />
 
 ## Step-by-Step Solution
