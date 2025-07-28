@@ -53,10 +53,10 @@ Welcome to the comprehensive documentation for the **OverRide** project — a co
 
 <StepsList steps={[
   {
-    title: "🧩 Level 00 - Hardcoded Credentials",
-    description: "Simple password extraction from binary strings",
-    command: "strings ./level00 | grep -i pass",
-    output: "Static analysis fundamentals"
+    title: "🧩 Level 00 - Weak Authentication",
+    description: "Simple numeric password through GDB analysis",
+    command: "gdb level00 && disas main",
+    output: "Reverse engineering fundamentals"
   },
   {
     title: "🔐 Level 01 - Logic Bypass", 
