@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import AsciinemaPlayer from '@site/src/components/AsciinemaPlayer';
