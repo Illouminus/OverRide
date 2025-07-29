@@ -59,10 +59,10 @@ Welcome to the comprehensive documentation for the **OverRide** project — a co
     output: "Reverse engineering fundamentals"
   },
   {
-    title: "🔐 Level 01 - Logic Bypass", 
-    description: "Username/password validation bypass techniques",
-    command: "Binary logic analysis",
-    output: "Authentication bypass methods"
+    title: "🔐 Level 01 - Buffer Overflow", 
+    description: "Stack-based buffer overflow with return address overwrite",
+    command: "fgets() overflow + ROP chain",
+    output: "Classic buffer overflow exploitation"
   },
   {
     title: "💣 Level 02 - Buffer Overflow",
