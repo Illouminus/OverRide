@@ -87,6 +87,15 @@ ERROR: failed to open password file`}
 
 **Vulnerability Confirmed:** The program outputs raw hex values from memory!
 
+
+## Live Demonstration
+
+<AsciinemaPlayer 
+  src="https://asciinema.org/a/bZKQrcaB5tGzuhHWxjO0E30KK.js" 
+  id="asciicast-bZKQrcaB5tGzuhHWxjO0E30KK" 
+/>
+
+
 ## Password Extraction Process
 
 <StepsList steps={[
