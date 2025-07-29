@@ -65,10 +65,10 @@ Welcome to the comprehensive documentation for the **OverRide** project — a co
     output: "Classic buffer overflow exploitation"
   },
   {
-    title: "💣 Level 02 - Buffer Overflow",
-    description: "Classic stack-based buffer overflow exploitation", 
-    command: "Stack manipulation & shellcode",
-    output: "Shell access via memory corruption"
+    title: "💣 Level 02 - Format String",
+    description: "Memory disclosure through printf format string vulnerability",
+    command: "printf(buffer) + %p stack scanning",
+    output: "Password extraction from memory"
   },
   {
     title: "🕳️ Level 03 - Format String",
