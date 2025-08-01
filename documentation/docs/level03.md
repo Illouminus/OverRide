@@ -99,6 +99,16 @@ movl $0x7b66737e,-0x15(%ebp)
 movl $0x33617c7d,-0x11(%ebp)`}
 />
 
+
+## Live Demonstration
+
+<AsciinemaPlayer 
+  src="https://asciinema.org/a/blO98TyOPnHSV469YafAMkCjy.js" 
+  id="asciicast-blO98TyOPnHSV469YafAMkCjy" 
+/>
+
+
+
 ### XOR Decryption Analysis
 
 <StepsList
