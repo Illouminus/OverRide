@@ -27,13 +27,14 @@ int store_number(unsigned int *data) {
     printf(" Index: ");
     index = get_unum();
 
-    // Ограничение: нельзя писать в кратные 3 индексы
+    // Check - we can't store a number if the number % 3 is 0 or if the index's highest byte is 0xb7
     if ((index % 3) == 0 || (index >> 24) == 0xb7) {
         puts("This index is reserved for wil!");
         return 1;
     }
 
-    data[index] = number;
+    // Out of bounds write - we don't check if index is within bounds of the data array
+    data[index] = number; 
 
     return 0;
 }
