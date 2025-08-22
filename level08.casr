@@ -1,0 +1,13 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1755841345, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+[0.028919, "o", "Restored session: Fri Aug 22 07:38:26 CEST 2025\r\n"]
+[0.462267, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"]
+[0.462618, "o", "\u001b]7;file://MacBook-Pro-de-Edouard.local/Users/edouard/Desktop/42-School/GitHub/OverRide\u0007"]
+[0.463515, "o", "\u001b]2;edouard@MacBook-Pro-de-Edouard\u0007\u001b]1;..tHub/OverRide\u0007"]
+[0.465599, "o", "\u001b]7;file://MacBook-Pro-de-Edouard.local/Users/edouard/Desktop/42-School/GitHub/OverRide\u001b\\"]
+[0.466362, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mOverRide\u001b[00m \u001b[K"]
+[0.466439, "o", "\u001b[?1h\u001b="]
+[0.46645, "o", "\u001b[?2004h"]
+[0.531072, "o", "\r\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mOverRide\u001b[00m \u001b[01;34mgit:(\u001b[31mmain\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"]
+[1.957449, "o", "\u001b[?2004l\r\r\n"]
+[1.972775, "o", "\r\nSaving session..."]
+[1.979712, "o", "completed.\r\n"]

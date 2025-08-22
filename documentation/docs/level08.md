@@ -135,6 +135,15 @@ Destination: ./backups/ + /home/users/level09/.pass
   ]}
 />
 
+## Live Demonstration
+
+<AsciinemaPlayer 
+  src="https://asciinema.org/a/OxqqUdpwF5lKom85GPgwrJdfh.js" 
+  id="asciicast-OxqqUdpwF5lKom85GPgwrJdfh" 
+/>
+
+
+
 ## Complete Exploit Demonstration
 
 <CodeBlock 
