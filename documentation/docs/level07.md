@@ -145,9 +145,10 @@ Index 1073741938 maps to data[114] in the array`}
 ## Live Demonstration
 
 <AsciinemaPlayer 
-  src="/level07.cast" 
-  id="level07-exploit" 
+  src="https://asciinema.org/a/o7SGOz7EowLax8j889ehjHbho.js" 
+  id="asciicast-o7SGOz7EowLax8j889ehjHbho" 
 />
+
 
 ## Step-by-Step Solution
 

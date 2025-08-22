@@ -1,11 +1,5 @@
 # Override Level01 Exploit Write-up
 
-## Step-by-step Exploit (Working Example)
-
-This write-up documents the complete process to exploit `level01` from the OverRide wargame. It contains exact commands and outputs verified during the exploit.
-
----
-
 ## 🛠️ Objective
 
 The goal is to gain a shell using buffer overflow in the `level01` binary by overwriting the return address with a call to `system("/bin/sh")`.
@@ -158,6 +152,3 @@ level02
 
 ---
 
-## 🧾 Notes
-
-Make sure to re-confirm the addresses before each exploitation attempt, as they might change on every run.

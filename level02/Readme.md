@@ -153,7 +153,7 @@ Combine all lines to get the full password.
 ```bash
 ./level02
 --[ Username: edouard
---[ Password: <paste your decoded password>
+--[ Password: Hh74RPnuQ9sa5JAEXgNWCqz7sXGnh5J5M9KfPg3H
 ```
 
 Success!
